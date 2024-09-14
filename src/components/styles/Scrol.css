@@ -1,0 +1,123 @@
+/* Scroll Container */
+.scroll-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: -10px
+}
+
+/* Scrollbar Styling */
+.scroll-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #6c6666;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scroll-container::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-spacing: 0; /* Remove spacing between table cells */
+}
+
+/* Button Styling */
+button {
+  background-color: #996f08;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #745404;
+}
+
+/* Stock Row */
+.stock-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.stock-row:hover {
+  transform: scale(1.02);
+}
+
+/* Company Info */
+.company-info {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.company-ticker {
+  font-size: 12px;
+  font-style: italic;
+  vertical-align: sub;
+  color: #555; /* Subtle color for ticker */
+}
+
+/* Stock Details */
+.stock-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  font-size: 14px; /* Smaller font size for details */
+  color: #555; /* Consistent text color */
+}
+
+.current-ppl {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.action-buttons {
+  flex: 0.3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Heading */
+h2 {
+  margin: 2px;
+  font-size: 24px; /* Adjusted to match the font size in File 1 */
+  align-self: center;
+  color: #ffffff; /* Consistent heading color */
+}

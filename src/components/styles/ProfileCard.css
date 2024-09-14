@@ -1,0 +1,111 @@
+
+/* Flip Card CSS */
+.flip-card {
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 10000px;
+    
+  }
+  #profilecardinner
+  {
+    font-size: 20px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .flip-card-front {
+    background-color: rgba(0,0,0,0.42.5);
+  }
+  
+  .flip-card-back {
+    background-color: rgba(0,0,0,0.42.5);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  img {
+    height: 60%;
+    width: 60%;
+    padding: 10px;
+    margin: 20px;
+  }
+  .details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-inline: 5px;
+    margin: 15px 0;
+  }
+  
+  .details-table td {
+    padding: 7.5px;
+    text-align: left;
+    color: white; /* Text color */
+  }
+  
+  .details-table td:first-child {
+    width: 40%; /* Adjust width of the first column */
+    color: #ccc; /* Slightly lighter color for labels */
+  }
+  
+  .details-table td:last-child {
+    width: 60%; /* Adjust width of the second column */
+  }
+  
+  .details-table tr {
+    
+    background-color: transparent; /* Set the background color to black */
+    transition: all 0.3s ease;
+    margin: 2px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .details-table tr:hover {
+    transform: scale(1.02); /* Apply the same hover scaling effect */
+    background-color: #0000001a; /* Slightly lighter black on hover */
+  }
+  
+  .flip-card-back button {
+  background-color:  rgb(153, 112, 8);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  }
+  
+  .flip-card-back button:hover {
+    background-color: rgb(116, 84, 4) /* Slightly lighter shade on hover */
+  }
+  
+  

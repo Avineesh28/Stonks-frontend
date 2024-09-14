@@ -1,0 +1,91 @@
+/* #performancechart
+{
+    height:100%;
+    width:100%;
+    background-color: rgba(42, 2, 79, 0.10);
+    border-radius: 10px;
+    padding-left: -2px;
+    padding-right: 25px;
+    padding-top:10px;
+    margin: 35px;
+}
+#chart
+{
+    height:150px;
+}
+#pl-div{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+} */
+
+.performance-container {
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom: -20px;
+  margin-top: -40px;
+}
+
+.title {
+  margin-bottom: -20px;
+  margin-left:80%;
+  font-size: 60px;
+}
+
+.pl-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -20px;
+}
+
+.amount {
+  font-size: 20px;
+}
+
+.left-amount, .right-amount {
+  flex: 1;
+  text-align: center;
+  margin-bottom:-10px
+}
+
+.arrow-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -20px
+}
+
+.pc-value {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.arrow-image {
+  width: 80px; 
+  height: auto;
+  margin-top: -20px
+}
+
+.profit-loss {
+  margin-top: -20px;
+  font-size: 18px;
+  color: White;
+}
+
+.stonkslogo{
+  margin-top: -70px;
+  margin-left: -110%;
+  height: 70px;
+  width: 140px;
+}
+
+.profit-loss h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

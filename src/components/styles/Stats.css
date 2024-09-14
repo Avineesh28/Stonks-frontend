@@ -1,0 +1,146 @@
+/* Ensure stats-grid takes up the full space */
+#stats {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the top-stocks section */
+  .top-stocks {
+    flex: 1; /* Allow the section to take up available space */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top:2px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable scrolling if content exceeds available space */
+  }
+  
+  /* Heading styles */
+  .top-stocks h2 {
+    margin: 0px; /* Remove margin around heading and add space below */
+    padding-bottom: 5px; /* Space between text and line */
+       /*Adjusted font size for better fit*/
+  }
+  
+  /* List styles */
+  .top-stocks-list {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+  }
+
+  .buyform{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Each stock item style */
+  .stock-item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px; /* Reduced padding to fit more rows */
+    border-bottom: 1px solid #ddd; /* Border between items */
+    font-size: 12px; /* Adjusted font size for smaller rows */
+  }
+  
+  /* Ensure stock-info fits well */
+  .stock-info {
+    display: flex;
+    justify-content: space-between; /* Space between company name and PPL */
+    margin-bottom: 5px; /* Space below stock-info */
+  }
+
+  .stock-symbol {
+    font-weight: bold;
+  }
+  
+  .stock-ppl {
+    font-weight: bold;
+  }
+
+  .top5-stock-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 5px; Space below stock-info */
+    width: 100%;
+}
+
+  .top5-stock-details {
+    font-size: 12px; /* Smaller font size for stock details */
+    color: #555;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+ 
+.formbuydata
+{
+  font-size: 18px; /* Smaller font size for stock details */
+  color: #555;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .top5-stock-details span {
+    margin-right: 10px; /* Space between details */
+  }
+  .buyform {
+    display: flex;
+    justify-content: space-between; /* Equally space out the elements */
+    align-items: center; /* Vertically center-align the elements */
+    color: white; /* Text color */
+    width: 100%;
+}
+
+#form {
+    flex-grow: 1; /* Allow the form to grow and take available space */
+    display: flex;
+    justify-content: flex-end; /* Align the form input and button to the right */
+    align-items: center;
+}
+
+#volume {
+    background-color: black; /* Black background for the input box */
+    border: none; /* Remove all borders */
+    border-bottom: 2px solid white; /* Only bottom border in white */
+    color: white; /* Text color in the input */
+    padding: 5px;
+    width: 150px; /* Set a width for the input box */
+    margin-right: 10px; /* Space between the input and the button */
+}
+
+#volume:focus {
+    outline: none; /* Remove the default outline on focus */
+}
+
+button {
+    background-color: rgb(153, 112, 8); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 5px 10px; /* Padding inside the button */
+    cursor: pointer; /* Cursor pointer on hover */
+    border-radius: 3px; /* Slightly rounded corners */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(116, 84, 4); /* Darker shade on hover */
+}
+
+p{
+  color: white;
+  padding-left: 15px;
+}
+
+#stockhigh
+{
+  padding-left: 10px;
+  margin-left: 10px;
+}
+#buysharesheading{
+  padding: 0px;;
+}

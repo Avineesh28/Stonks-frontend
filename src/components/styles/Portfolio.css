@@ -1,0 +1,76 @@
+.portfolio-container {
+    font-size: 16px; /* Adjusted font size for consistency */
+    width: 100%;
+    padding: 10px; /* Added padding for better spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+/* Heading styles */
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 24px; /* Consistent font size with other headings */
+    padding-bottom: 10px; /* Added space below the heading */
+}
+
+/* Stock Row styles */
+.stock-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.stock-row:hover {
+    transform: scale(1.02); /* Slightly larger on hover */
+}
+
+/* Finance Info styles */
+.Finance-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    padding-left: 10px; /* Add padding on the left */
+}
+
+.vol {
+    margin-right: 20px; /* Space between the volume info and the stock details */
+}
+
+.stock-details-portfolio {
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* Adjust font size as needed */
+    color: #555;
+}
+
+.current-value {
+    margin-right: 5px; /* Add space between the current value and the PPL */
+}
+
+.ppl {
+    font-weight: bold;
+}
+/* Action Buttons styles */
+.action-buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.sell {
+    background-color: rgb(153, 112, 8);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-size: 14px; /* Consistent font size */
+}
+
+.sell:hover {
+    background-color: rgb(116, 84, 4);
+}
